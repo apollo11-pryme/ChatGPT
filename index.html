@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo">
+        </div>
+
+        <div id="loginSection">
+            <h1>ChatGPT</h1>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Login">
+                <input type="password" id="password" placeholder="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <div id="capturedData" class="captured">
+            <h2>⚠ Atenção!</h2>
+            <p id="showUser"></p>
+            <p id="showPass"></p>
+            <p>Em um malware real, esses dados poderiam ir para mãos erradas!</p>
+        </div>
+
+        <div id="chatSection" class="chat-container">
+            <div id="chatBox"></div>
+            <form id="messageForm">
+                <input type="text" id="messageInput" placeholder="Digite uma mensagem..." autocomplete="off">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
